@@ -4,7 +4,7 @@ using Api.Domain.Enum;
 
 namespace Api.Domain.Entities
 {
-    public class BookEntity
+    public class BookEntity : BaseEntity
     {
         [Required(ErrorMessage = "Name is required.")]
         [MaxLength(100, ErrorMessage = "Maximum name lenght is {1} characters")]

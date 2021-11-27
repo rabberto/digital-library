@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Api.Domain.Entities
@@ -7,5 +8,6 @@ namespace Api.Domain.Entities
         [Required(ErrorMessage = "Name is required.")]
         [MaxLength(100, ErrorMessage = "Maximum name lenght is {1} characters")]
         public string Name { get; set; }
+        public List<BookEntity> Books { get; set; }
     }
 }
